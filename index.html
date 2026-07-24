@@ -382,7 +382,7 @@ footer{font-size:10px;color:var(--muted);text-align:center;line-height:1.7;margi
       </select></div>
     <div class="f"><label>볼트 규격</label>
       <select id="bo-size">
-        <option value="M12" selected>M12</option><option value="M16">M16</option>
+        <option value="M10">M10</option><option value="M12" selected>M12</option><option value="M16">M16</option>
         <option value="M20">M20</option><option value="M22">M22</option>
         <option value="M24">M24</option><option value="M27">M27</option>
         <option value="M30">M30</option><option value="M36">M36</option>
@@ -1105,6 +1105,7 @@ function calcDuct(){
 // p=피치, nut=일반너트 높이, nutH=고장력너트 높이, w=일반평와셔 t, wH=고장력평와셔 t,
 // sw=스프링와셔 t, ext=고장력볼트 여유길이(건축공사 표준시방서) — 전부 대표값, 화면에서 수정 가능
 const BOLT_DB={
+  M10:{p:1.5, nut:8, nutH:9, w:2.0,wH:2.3,sw:2.6,ext:18},
   M12:{p:1.75,nut:10,nutH:12,w:2.5,wH:3.2,sw:3.1,ext:20},
   M16:{p:2.0, nut:13,nutH:14,w:3.0,wH:3.2,sw:4.0,ext:25},
   M20:{p:2.5, nut:16,nutH:17,w:3.0,wH:3.2,sw:5.1,ext:30},
